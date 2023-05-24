@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-class UpcomingCard extends StatelessWidget {
-  const UpcomingCard({
+class cuadro extends StatelessWidget {
+  const cuadro({
     Key? key,
   }) : super(key: key);
 
@@ -22,7 +22,7 @@ class UpcomingCard extends StatelessWidget {
           ClipRRect(
             borderRadius: BorderRadius.circular(10),
             child: Image.asset(
-              'assets/doctor_2.jpg',
+              'assets/pizza.jpg',
               width: 45,
               fit: BoxFit.cover,
             ),
@@ -32,7 +32,7 @@ class UpcomingCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                "Dr. Ruben Dorwart",
+                "PIZZERIA FANNY",
                 style: TextStyle(
                   fontSize: 18,
                   fontWeight: FontWeight.bold,
@@ -41,7 +41,7 @@ class UpcomingCard extends StatelessWidget {
               ),
               const SizedBox(height: 5),
               Text(
-                "Dental Specialist",
+                "Pizza a la leña.",
                 style: Theme.of(context).textTheme.bodyText1!.copyWith(
                       color: Colors.white70,
                     ),
@@ -65,7 +65,7 @@ class UpcomingCard extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(left: 6, right: 14),
                       child: Text(
-                        "Today",
+                        "Hoy",
                         style: TextStyle(color: Colors.white),
                       ),
                     ),
@@ -78,7 +78,7 @@ class UpcomingCard extends StatelessWidget {
                       ),
                     ),
                     Text(
-                      "14:30 - 15:30 AM",
+                      "11:30am - 10:30pm",
                       style: TextStyle(
                         color: Colors.white,
                       ),

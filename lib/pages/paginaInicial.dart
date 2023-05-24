@@ -1,11 +1,11 @@
-import 'package:ecommerce/widgets/health_needs.dart';
-import 'package:ecommerce/widgets/nearby_doctors.dart';
-import 'package:ecommerce/widgets/upcoming_card.dart';
+import 'package:ecommerce/widgets/extras.dart';
+import 'package:ecommerce/widgets/empleados2.dart';
+import 'package:ecommerce/widgets/cuadro.dart';
 import 'package:flutter/material.dart';
 import 'package:ionicons/ionicons.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+class PaginaInicial extends StatelessWidget {
+  const PaginaInicial({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +14,9 @@ class HomePage extends StatelessWidget {
         title: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const Text("Hi, Jane"),
+            const Text("Hola, Estefania"),
             Text(
-              "How are you feeling today?",
+              "Buscas una pizza?",
               style: Theme.of(context).textTheme.caption,
             ),
           ],
@@ -36,21 +36,21 @@ class HomePage extends StatelessWidget {
         physics: const BouncingScrollPhysics(),
         padding: const EdgeInsets.all(14),
         children: [
-          const UpcomingCard(),
+          const cuadro(),
           const SizedBox(height: 20),
           Text(
-            "Health Needs",
+            "Extras",
             style: Theme.of(context).textTheme.headline6,
           ),
           const SizedBox(height: 15),
-          const HealthNeeds(),
+          const extras(),
           const SizedBox(height: 25),
           Text(
-            "Nearby Doctors",
+            "Empleados",
             style: Theme.of(context).textTheme.headline6,
           ),
           const SizedBox(height: 15),
-          const NearbyDoctors(),
+          const empleados2(),
         ],
       ),
       bottomNavigationBar: BottomNavigationBar(
@@ -61,22 +61,22 @@ class HomePage extends StatelessWidget {
           BottomNavigationBarItem(
             icon: Icon(Ionicons.home_outline),
             activeIcon: Icon(Ionicons.home),
-            label: "Home",
+            label: "Inicio",
           ),
           BottomNavigationBarItem(
             icon: Icon(Ionicons.calendar_outline),
             activeIcon: Icon(Ionicons.calendar),
-            label: "Home",
+            label: "Inicio",
           ),
           BottomNavigationBarItem(
             icon: Icon(Ionicons.chatbubble_ellipses_outline),
-            label: "Home",
+            label: "Inicio",
             activeIcon: Icon(Ionicons.chatbubble_ellipses),
           ),
           BottomNavigationBarItem(
             icon: Icon(Ionicons.person_outline),
             activeIcon: Icon(Ionicons.person),
-            label: "Home",
+            label: "Inicio",
           ),
         ],
       ),
